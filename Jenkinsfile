@@ -42,7 +42,7 @@ pipeline {
             mvn clean verify sonar:sonar \
                 -Dsonar.projectKey=project \
                 -Dsonar.projectName='project' \
-                -Dsonar.host.url=http://3.76.133.158:9000 \
+                -Dsonar.host.url=http://3.76.133.158:9000\
                 -Dsonar.token=token12
         sh "mvn sonar:sonar"
     }
