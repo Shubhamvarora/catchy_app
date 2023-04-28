@@ -41,7 +41,7 @@ pipeline {
 //      sh "${scannerHome}/bin/sonar-scanner"
             mvn clean verify sonar:sonar \
                 -Dsonar.projectKey=project \
-                -Dsonar.projectName='project' \
+                -Dsonar.projectName=project \
                
                 -Dsonar.token=token12
         sh "mvn sonar:sonar"
