@@ -39,10 +39,10 @@ pipeline {
         // If you have configured more than one global server connection, you can specify its name
 //      sh "${scannerHome}/bin/sonar-scanner"
             mvn clean verify sonar:sonar \
-  -Dsonar.projectKey=project \
-  -Dsonar.projectName='project' \
-  -Dsonar.host.url=http://3.76.133.158:9000 \
-  -Dsonar.token=token12
+                -Dsonar.projectKey=project \
+                -Dsonar.projectName='project' \
+                -Dsonar.host.url=http://3.76.133.158:9000 \
+                -Dsonar.token=token12
         sh "mvn sonar:sonar"
     }
         }
